@@ -37,7 +37,7 @@ func TestS3Mock(t *testing.T) {
 			},
 		})
 		return output
-	})
+	}, nil)
 
 	listingInput := &s3.ListObjectsInput{
 		Bucket:    aws.String("foo"),
